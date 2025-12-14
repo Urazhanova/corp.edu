@@ -5,10 +5,19 @@ import App from './App.tsx'
 
 import { BrowserRouter } from 'react-router-dom'
 
-createRoot(document.getElementById('root')!).render(
+import { hydrateRoot } from 'react-dom/client'
+
+const container = document.getElementById('root')!;
+const app = (
   <StrictMode>
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </StrictMode>,
-)
+  </StrictMode>
+);
+
+if (container.hasChildNodes()) {
+  hydrateRoot(container, app);
+} else {
+  createRoot(container).render(app);
+}
