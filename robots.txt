@@ -1,4 +1,9 @@
 User-agent: *
 Allow: /
 
+# Sitemap
 Sitemap: https://corp-edu.kz/sitemap.xml
+
+# Запрет на индексацию служебных директорий (если есть)
+Disallow: /admin/
+Disallow: /api/
