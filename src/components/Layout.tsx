@@ -33,7 +33,7 @@ const Layout = ({ children }: LayoutProps) => {
             >
                 <div className="container mx-auto px-4 flex justify-between items-center">
                     <div className={`text-2xl font-bold transition-colors ${isScrolled ? 'text-primary' : 'text-primary'}`}>
-                        <img src="/logo.png" alt="Corp.Edu" className="h-14 w-auto" />
+                        <img src="/logo.png" alt="КОРП.ЕДУ — корпоративное обучение с AI" className="h-14 w-auto" />
                     </div>
 
                     {/* Desktop Menu */}

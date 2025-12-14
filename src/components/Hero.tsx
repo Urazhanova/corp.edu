@@ -15,23 +15,25 @@ const Hero = () => {
 
             <div className="container mx-auto px-4 z-10 relative">
                 <div className="max-w-4xl mx-auto text-center">
-                    <motion.h1
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
-                        className="text-6xl md:text-8xl font-bold text-primary mb-6 tracking-tight"
-                    >
-                        Corp.Edu
-                    </motion.h1>
+                    <h1 className="flex flex-col items-center">
+                        <motion.span
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6 }}
+                            className="text-6xl md:text-8xl font-bold text-primary mb-6 tracking-tight block"
+                        >
+                            Corp.Edu
+                        </motion.span>
 
-                    <motion.h2
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: 0.2 }}
-                        className="text-3xl md:text-5xl text-gray-800 mb-6 font-bold"
-                    >
-                        Обучение, которое работает
-                    </motion.h2>
+                        <motion.span
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, delay: 0.2 }}
+                            className="text-3xl md:text-5xl text-gray-800 mb-6 font-bold block"
+                        >
+                            Обучение, которое работает
+                        </motion.span>
+                    </h1>
 
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
