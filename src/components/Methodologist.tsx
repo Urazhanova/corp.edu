@@ -11,7 +11,7 @@ const Methodologist = () => {
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.6 }}
-                            className="relative order-2 md:order-1"
+                            className="relative order-2 md:order-1 w-2/3 mx-auto"
                         >
                             <div className="absolute inset-0 bg-accent/10 rounded-2xl transform -rotate-3 -translate-x-2 translate-y-2"></div>
                             <img
