@@ -1,12 +1,13 @@
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Hero from './components/Hero';
-import Problems from './components/Problems';
-import Products from './components/Products';
-import Advantages from './components/Advantages';
-import Methodologist from './components/Methodologist';
-import Audience from './components/Audience';
-import Contact from './components/Contact';
+import ProblemSolution from './components/ProblemSolution';
+import TrainingPrograms from './components/TrainingPrograms';
+import IntelligentSimulators from './components/IntelligentSimulators';
+import Methodology from './components/Methodology';
+import Results from './components/Results';
+import Experts from './components/Experts';
+import PartnershipInquiry from './components/PartnershipInquiry';
 import Footer from './components/Footer';
 import PrivacyPolicy from './components/PrivacyPolicy';
 
@@ -16,12 +17,13 @@ function App() {
       <Route path="/" element={
         <Layout>
           <Hero />
-          <Problems />
-          <Products />
-          <Advantages />
-          <Methodologist />
-          <Audience />
-          <Contact />
+          <ProblemSolution />
+          <TrainingPrograms />
+          <IntelligentSimulators />
+          <Methodology />
+          <Results />
+          <Experts />
+          <PartnershipInquiry />
           <Footer />
         </Layout>
       } />

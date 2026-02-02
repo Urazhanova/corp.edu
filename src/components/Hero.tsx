@@ -1,68 +1,74 @@
-
-import { ArrowRight } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { ArrowRight, ChevronRight } from 'lucide-react';
+import heroBg from '../assets/hero-bg.png';
 
 const Hero = () => {
-    const scrollToContact = () => {
-        document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-    };
-
     return (
-        <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-bg-light to-white overflow-hidden pt-20">
-            <div className="absolute inset-0 z-0 opacity-10">
-                <div className="absolute top-0 right-0 w-1/2 h-full bg-primary transform skew-x-12 translate-x-1/4" />
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+            {/* Background Image */}
+            <div className="absolute inset-0 z-0">
+                <img
+                    src={heroBg}
+                    alt="Industrial Refinery at Night"
+                    className="w-full h-full object-cover"
+                />
+                {/* Overlay Gradient */}
+                <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-primary/40"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent"></div>
             </div>
 
-            <div className="container mx-auto px-4 z-10 relative">
-                <div className="max-w-4xl mx-auto text-center">
-                    <h1 className="flex flex-col items-center">
-                        <motion.span
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6 }}
-                            className="text-6xl md:text-8xl font-bold text-primary mb-6 tracking-tight block"
-                        >
-                            Corp.Edu
-                        </motion.span>
+            {/* Grid Overlay */}
+            <div className="absolute inset-0 bg-grid-pattern opacity-20 z-0"></div>
 
-                        <motion.span
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6, delay: 0.2 }}
-                            className="text-3xl md:text-5xl text-gray-800 mb-6 font-bold block"
-                        >
-                            Обучение, которое работает
-                        </motion.span>
+            <div className="container mx-auto px-6 relative z-10 pt-20">
+                <div className="max-w-5xl">
+                    <div className="inline-flex items-center gap-2 px-3 py-1 border border-accent-cyan/30 rounded-full bg-accent-cyan/10 backdrop-blur-sm mb-6">
+                        <span className="w-2 h-2 rounded-full bg-accent-cyan animate-pulse"></span>
+                        <span className="text-accent-cyan text-xs font-mono tracking-widest uppercase">Trusted by Leading Industrial Enterprises</span>
+                    </div>
+
+                    <h1 className="text-5xl md:text-7xl font-display font-bold text-white leading-tight mb-6">
+                        TRANSFORM YOUR WORKFORCE WITH <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-accent-cyan">AI-POWERED TRAINING</span> SOLUTIONS
                     </h1>
 
-                    <motion.p
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: 0.4 }}
-                        className="text-xl md:text-2xl text-gray-600 mb-4 max-w-3xl mx-auto leading-relaxed"
-                    >
-                        Создаем интерактивные обучающие продукты с AI для крупных компаний
-                    </motion.p>
+                    <p className="text-xl md:text-2xl text-gray-300 font-light max-w-2xl mb-12 leading-relaxed">
+                        Practical AI training and intelligent simulators that eliminate routine work, accelerate decision-making, and deliver measurable ROI.
+                        <br /><span className="text-white text-lg mt-4 block">We don't replace your engineering systems—we eliminate the routine around them.</span>
+                    </p>
 
-                    <motion.p
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: 0.5 }}
-                        className="text-lg text-gray-500 mb-12 font-medium"
-                    >
-                        Для HR-директоров и руководителей L&D
-                    </motion.p>
+                    <div className="flex flex-col sm:flex-row gap-6 mb-20">
+                        <button className="group px-8 py-4 bg-accent-cyan text-primary font-bold text-sm tracking-widest uppercase hover:bg-white transition-all duration-300 flex items-center justify-center gap-3">
+                            Schedule a Demo
+                            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                        </button>
 
-                    <motion.button
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: 0.6 }}
-                        onClick={scrollToContact}
-                        className="group bg-accent text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-red-900 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-2 mx-auto"
-                    >
-                        Обсудить задачу
-                        <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                    </motion.button>
+                        <button
+                            onClick={() => document.getElementById('training')?.scrollIntoView({ behavior: 'smooth' })}
+                            className="group px-8 py-4 border border-white/20 hover:border-accent-cyan text-white hover:text-accent-cyan font-bold text-sm tracking-widest uppercase bg-white/5 backdrop-blur-sm transition-all duration-300 flex items-center justify-center gap-3"
+                        >
+                            Explore Training Programs
+                            <ChevronRight className="w-4 h-4" />
+                        </button>
+                    </div>
+
+                    {/* Key Stats Bar */}
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-white/10 pt-8">
+                        <div>
+                            <span className="block text-3xl font-bold text-white mb-1">70%</span>
+                            <span className="text-gray-400 text-xs uppercase tracking-wider">Reduction in Reporting Time</span>
+                        </div>
+                        <div>
+                            <span className="block text-3xl font-bold text-white mb-1">5 min</span>
+                            <span className="text-gray-400 text-xs uppercase tracking-wider">Report Generation</span>
+                        </div>
+                        <div>
+                            <span className="block text-3xl font-bold text-white mb-1">50+</span>
+                            <span className="text-gray-400 text-xs uppercase tracking-wider">Regulations Uploaded</span>
+                        </div>
+                        <div>
+                            <span className="block text-3xl font-bold text-white mb-1">Real-time</span>
+                            <span className="text-gray-400 text-xs uppercase tracking-wider">Log Analysis</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
