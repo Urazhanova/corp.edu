@@ -5,10 +5,12 @@ import emailjs from '@emailjs/browser';
 const PartnershipInquiry = () => {
     const form = useRef<HTMLFormElement>(null);
     const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+    const [errorMessage, setErrorMessage] = useState('');
 
     const sendEmail = (e: React.FormEvent) => {
         e.preventDefault();
         setStatus('sending');
+        setErrorMessage('');
 
         // REPLACE THESE WITH YOUR ACTUAL EMAILJS KEYS
         const SERVICE_ID = 'service_aqcyiee';
@@ -24,6 +26,7 @@ const PartnershipInquiry = () => {
                 }, (error) => {
                     console.log(error.text);
                     setStatus('error');
+                    setErrorMessage(error.text || 'Unknown error occurred');
                 });
         }
     };
@@ -91,7 +94,10 @@ const PartnershipInquiry = () => {
                             {status === 'error' && (
                                 <div className="flex items-center gap-2 text-red-400 bg-red-900/20 p-4 border border-red-500/20 mb-6">
                                     <AlertCircle className="w-5 h-5 flex-shrink-0" />
-                                    <p className="text-sm">There was an error sending your request. Please try again later.</p>
+                                    <div>
+                                        <p className="text-sm font-bold">Error sending request:</p>
+                                        <p className="text-xs font-mono mt-1">{errorMessage}</p>
+                                    </div>
                                 </div>
                             )}
 
