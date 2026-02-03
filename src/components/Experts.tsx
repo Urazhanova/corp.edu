@@ -46,11 +46,12 @@ const Experts = () => {
                         </div>
                     </div>
 
-                    {/* Expert 2 (Placeholder) */}
-                    <div className="group relative opacity-80">
+                    {/* Expert 2 */}
+                    <div className="group relative">
+                        <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
                         <div className="flex flex-col md:flex-row gap-8 items-start">
-                            <div className="w-full md:w-48 aspect-[3/4] bg-gray-800 flex items-center justify-center border border-white/10">
-                                <span className="text-gray-600 font-mono text-xs">IMG PLACEHOLDER</span>
+                            <div className="w-full md:w-48 aspect-[3/4] bg-gray-800 flex items-center justify-center border border-white/10 overflow-hidden">
+                                <img src="/images/alexander.jpg" alt="Alexander Barsky" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
                             </div>
 
                             <div className="flex-1">
@@ -61,13 +62,13 @@ const Experts = () => {
                                     <div>
                                         <h4 className="text-white font-bold text-sm mb-1">Professional Background</h4>
                                         <ul className="text-sm text-gray-400 space-y-1 list-disc list-inside">
-                                            <li>Senior executive experience in industrial orgs</li>
-                                            <li>Expertise in aligning AI with safety regs</li>
+                                            <li>Built and scaled full learning ecosystems: curriculum, assessment, QA and governance</li>
+                                            <li>5+ years integrating AI and data into instructional design and creative academies</li>
                                         </ul>
                                     </div>
                                     <div>
                                         <h4 className="text-white font-bold text-sm mb-1">Area of Expertise</h4>
-                                        <p className="text-sm text-gray-400">Industrial AI systems, Operational decision support.</p>
+                                        <p className="text-sm text-gray-400">Industrial AI systems, Operational decision support, Talent development ecosystems.</p>
                                     </div>
                                 </div>
                             </div>
