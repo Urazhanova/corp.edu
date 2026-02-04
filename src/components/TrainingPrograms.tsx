@@ -64,12 +64,12 @@ const TrainingPrograms = () => {
     ];
 
     return (
-        <section id="training" className="py-24 bg-surface relative">
+        <section id="training" className="py-24 bg-slate-50 relative">
             <div className="container mx-auto px-6">
                 <div className="mb-12">
                     <h2 className="text-sm font-mono text-accent-cyan tracking-widest uppercase mb-4">Industry-Specific Training</h2>
-                    <h3 className="text-3xl md:text-5xl font-display font-bold text-white mb-6">TRAINING BUILT FOR YOUR REALITY</h3>
-                    <p className="text-gray-400 max-w-2xl">Generic AI training doesn't work for industrial operations. Our programs address the specific challenges, regulations, and workflows of your sector.</p>
+                    <h3 className="text-3xl md:text-5xl font-display font-bold text-slate-900 mb-6">TRAINING BUILT FOR YOUR REALITY</h3>
+                    <p className="text-slate-600 max-w-2xl">Generic AI training doesn't work for industrial operations. Our programs address the specific challenges, regulations, and workflows of your sector.</p>
                 </div>
 
                 <div className="flex flex-col md:flex-row gap-8">
@@ -80,11 +80,11 @@ const TrainingPrograms = () => {
                                 key={idx}
                                 onClick={() => setActiveTab(idx)}
                                 className={`text-left px-6 py-4 flex items-center gap-4 transition-all duration-300 border-l-2 ${activeTab === idx
-                                        ? 'bg-primary border-accent-cyan text-white shadow-lg'
-                                        : 'border-white/10 text-gray-400 hover:bg-primary/50 hover:text-white'
+                                    ? 'bg-white border-accent-cyan text-slate-900 shadow-md'
+                                    : 'border-slate-200 text-slate-500 hover:bg-white hover:text-slate-900'
                                     }`}
                             >
-                                <span className={`${activeTab === idx ? 'text-accent-cyan' : 'text-gray-500'}`}>
+                                <span className={`${activeTab === idx ? 'text-accent-cyan' : 'text-slate-400'}`}>
                                     {prog.icon}
                                 </span>
                                 <span className="font-bold text-sm tracking-wide uppercase">{prog.title}</span>
@@ -93,13 +93,13 @@ const TrainingPrograms = () => {
                     </div>
 
                     {/* Content Area */}
-                    <div className="w-full md:w-3/4 bg-primary border border-white/5 p-8 md:p-12 relative min-h-[500px]">
+                    <div className="w-full md:w-3/4 bg-white border border-slate-200 shadow-sm p-8 md:p-12 relative min-h-[500px]">
 
                         <div key={activeTab} className="animate-fade-in">
-                            <h4 className="text-2xl font-display font-bold text-white mb-2">{programs[activeTab].programTitle}</h4>
+                            <h4 className="text-2xl font-display font-bold text-slate-900 mb-2">{programs[activeTab].programTitle}</h4>
                             <div className="flex flex-wrap gap-2 mb-8">
                                 {programs[activeTab].audience.map((role, i) => (
-                                    <span key={i} className="text-xs font-mono text-accent-gold bg-accent-gold/10 px-2 py-1 rounded">
+                                    <span key={i} className="text-xs font-mono text-accent-cyan bg-accent-cyan/10 px-2 py-1 rounded">
                                         {role}
                                     </span>
                                 ))}
@@ -108,20 +108,20 @@ const TrainingPrograms = () => {
                             <div className="grid md:grid-cols-2 gap-x-12 gap-y-8 mb-10">
                                 {programs[activeTab].modules.map((mod, i) => (
                                     <div key={i}>
-                                        <h5 className="text-white font-bold mb-2 flex items-center gap-2">
+                                        <h5 className="text-slate-900 font-bold mb-2 flex items-center gap-2">
                                             <span className="w-1.5 h-1.5 bg-accent-cyan rounded-full"></span>
                                             {mod.title}
                                         </h5>
-                                        <p className="text-sm text-gray-400 leading-relaxed">{mod.desc}</p>
+                                        <p className="text-sm text-slate-600 leading-relaxed">{mod.desc}</p>
                                     </div>
                                 ))}
                             </div>
 
-                            <div className="border-t border-white/10 pt-8">
-                                <h5 className="text-sm font-mono text-gray-500 uppercase tracking-widest mb-4">Practical Outcomes</h5>
+                            <div className="border-t border-slate-100 pt-8">
+                                <h5 className="text-sm font-mono text-slate-500 uppercase tracking-widest mb-4">Practical Outcomes</h5>
                                 <div className="flex flex-wrap gap-4">
                                     {programs[activeTab].outcomes.map((outcome, i) => (
-                                        <div key={i} className="flex items-center gap-2 text-white text-sm bg-surface px-4 py-2 rounded-none border border-white/10">
+                                        <div key={i} className="flex items-center gap-2 text-slate-700 text-sm bg-slate-50 px-4 py-2 rounded-none border border-slate-200">
                                             <CheckCircle2 className="w-4 h-4 text-accent-cyan" />
                                             {outcome}
                                         </div>
@@ -133,7 +133,7 @@ const TrainingPrograms = () => {
                     </div>
                 </div>
 
-                <div className="mt-12 p-6 bg-accent-cyan/10 border border-accent-cyan/20 text-center">
+                <div className="mt-12 p-6 bg-accent-cyan/5 border border-accent-cyan/20 text-center">
                     <p className="text-accent-cyan font-mono text-sm">
                         FORMAT: 1-2 DAYS INTENSIVE | ON-SITE DELIVERY | CUSTOMIZED TO YOUR DATA
                     </p>
