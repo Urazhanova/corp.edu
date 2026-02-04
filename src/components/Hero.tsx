@@ -36,10 +36,10 @@ const Hero = () => {
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-6 mb-20">
-                        <button className="group px-8 py-4 bg-accent-cyan text-primary font-bold text-sm tracking-widest uppercase hover:bg-white transition-all duration-300 flex items-center justify-center gap-3">
+                        <a href="#contact" className="group relative px-8 py-4 bg-accent-cyan text-primary font-bold text-sm tracking-widest uppercase overflow-hidden rounded-none hover:bg-white transition-colors duration-300 flex items-center justify-center gap-3">
                             Schedule a Demo
                             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                        </button>
+                        </a>
 
                         <button
                             onClick={() => document.getElementById('training')?.scrollIntoView({ behavior: 'smooth' })}
