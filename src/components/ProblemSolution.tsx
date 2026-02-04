@@ -2,7 +2,10 @@ import { AlertTriangle, Clock, Database, BrainCircuit, XCircle } from 'lucide-re
 
 const ProblemSolution = () => {
     return (
-        <section id="problem-solution" className="py-24 bg-white relative">
+        <section id="problem-solution" className="py-24 bg-gradient-to-b from-slate-50 to-white relative">
+            {/* Transition Overlay */}
+            <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-primary/5 to-transparent pointer-events-none" />
+
             <div className="container mx-auto px-6">
 
                 {/* The Challenge */}
