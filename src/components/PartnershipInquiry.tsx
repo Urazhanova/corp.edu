@@ -14,7 +14,7 @@ const PartnershipInquiry = () => {
 
         // REPLACE THESE WITH YOUR ACTUAL EMAILJS KEYS
         const SERVICE_ID = 'service_aqcyiee';
-        const TEMPLATE_ID = 'template_vkhmce8';
+        const TEMPLATE_ID = 'template_o551ern';
         const PUBLIC_KEY = 'BfxXlQv3PM5Dse3qE';
 
         if (form.current) {
