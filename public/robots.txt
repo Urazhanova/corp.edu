@@ -2,8 +2,8 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://corp-edu.kz/sitemap.xml
+Sitemap: https://corp-edu.org/sitemap.xml
 
-# Disallow service directories (if any)
+# Prevent indexing of internal routes
 Disallow: /admin/
 Disallow: /api/
