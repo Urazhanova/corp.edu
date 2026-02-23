@@ -86,6 +86,8 @@ const Contact = () => {
                                             id="name"
                                             name="name"
                                             required
+                                            onInvalid={(e) => (e.target as HTMLInputElement).setCustomValidity('Please fill out this field.')}
+                                            onInput={(e) => (e.target as HTMLInputElement).setCustomValidity('')}
                                             value={formData.name}
                                             onChange={handleChange}
                                             className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
@@ -101,6 +103,8 @@ const Contact = () => {
                                             id="contact"
                                             name="contact"
                                             required
+                                            onInvalid={(e) => (e.target as HTMLInputElement).setCustomValidity('Please fill out this field.')}
+                                            onInput={(e) => (e.target as HTMLInputElement).setCustomValidity('')}
                                             value={formData.contact}
                                             onChange={handleChange}
                                             className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
@@ -116,6 +120,8 @@ const Contact = () => {
                                             name="message"
                                             rows={4}
                                             required
+                                            onInvalid={(e) => (e.target as HTMLTextAreaElement).setCustomValidity('Please fill out this field.')}
+                                            onInput={(e) => (e.target as HTMLTextAreaElement).setCustomValidity('')}
                                             value={formData.message}
                                             onChange={handleChange}
                                             className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all resize-none"

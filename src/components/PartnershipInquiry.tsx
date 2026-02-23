@@ -61,19 +61,19 @@ const PartnershipInquiry = () => {
                             <div className="grid md:grid-cols-2 gap-8 mb-8">
                                 <div className="space-y-2">
                                     <label className="text-xs font-mono text-accent-cyan uppercase tracking-wider">Name</label>
-                                    <input type="text" name="user_name" required className="w-full bg-primary border-b border-white/20 px-0 py-3 text-white focus:outline-none focus:border-accent-cyan transition-colors hover:border-white/40 placeholder-primary" placeholder="Full Name" />
+                                    <input type="text" name="user_name" required onInvalid={(e) => (e.target as HTMLInputElement).setCustomValidity('Please fill out this field.')} onInput={(e) => (e.target as HTMLInputElement).setCustomValidity('')} className="w-full bg-primary border-b border-white/20 px-0 py-3 text-white focus:outline-none focus:border-accent-cyan transition-colors hover:border-white/40 placeholder-primary" placeholder="Full Name" />
                                 </div>
                                 <div className="space-y-2">
                                     <label className="text-xs font-mono text-accent-cyan uppercase tracking-wider">Company</label>
-                                    <input type="text" name="user_company" required className="w-full bg-primary border-b border-white/20 px-0 py-3 text-white focus:outline-none focus:border-accent-cyan transition-colors hover:border-white/40 placeholder-primary" placeholder="Organization Name" />
+                                    <input type="text" name="user_company" required onInvalid={(e) => (e.target as HTMLInputElement).setCustomValidity('Please fill out this field.')} onInput={(e) => (e.target as HTMLInputElement).setCustomValidity('')} className="w-full bg-primary border-b border-white/20 px-0 py-3 text-white focus:outline-none focus:border-accent-cyan transition-colors hover:border-white/40 placeholder-primary" placeholder="Organization Name" />
                                 </div>
                                 <div className="space-y-2">
                                     <label className="text-xs font-mono text-accent-cyan uppercase tracking-wider">Title</label>
-                                    <input type="text" name="user_title" required className="w-full bg-primary border-b border-white/20 px-0 py-3 text-white focus:outline-none focus:border-accent-cyan transition-colors hover:border-white/40 placeholder-primary" placeholder="Job Title" />
+                                    <input type="text" name="user_title" required onInvalid={(e) => (e.target as HTMLInputElement).setCustomValidity('Please fill out this field.')} onInput={(e) => (e.target as HTMLInputElement).setCustomValidity('')} className="w-full bg-primary border-b border-white/20 px-0 py-3 text-white focus:outline-none focus:border-accent-cyan transition-colors hover:border-white/40 placeholder-primary" placeholder="Job Title" />
                                 </div>
                                 <div className="space-y-2">
                                     <label className="text-xs font-mono text-accent-cyan uppercase tracking-wider">Email</label>
-                                    <input type="email" name="user_email" required className="w-full bg-primary border-b border-white/20 px-0 py-3 text-white focus:outline-none focus:border-accent-cyan transition-colors hover:border-white/40 placeholder-primary" placeholder="Work Email" />
+                                    <input type="email" name="user_email" required onInvalid={(e) => { const t = e.target as HTMLInputElement; t.setCustomValidity(t.validity.valueMissing ? 'Please fill out this field.' : 'Please enter a valid email address.'); }} onInput={(e) => (e.target as HTMLInputElement).setCustomValidity('')} className="w-full bg-primary border-b border-white/20 px-0 py-3 text-white focus:outline-none focus:border-accent-cyan transition-colors hover:border-white/40 placeholder-primary" placeholder="Work Email" />
                                 </div>
                                 <div className="space-y-2">
                                     <label className="text-xs font-mono text-accent-cyan uppercase tracking-wider">Industry Sector</label>
