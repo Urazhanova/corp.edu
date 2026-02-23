@@ -2,6 +2,10 @@ services:
   - type: web
     name: corpedu-eng
     env: static
-    buildCommand: npm run build
+    buildCommand: npm install && npm run build
     staticPublishPath: ./dist
     branch: eng
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
