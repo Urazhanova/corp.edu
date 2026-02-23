@@ -58,7 +58,7 @@ const Contact = () => {
                         <div className="bg-primary p-8 md:p-10 text-white text-center">
                             <h2 className="text-3xl md:text-4xl font-bold mb-4">Обсудить задачу</h2>
                             <p className="text-blue-100 text-lg">
-                                Если у вас есть задача или идея — напишите. Я посмотрю, сможем ли мы быть полезны.
+                                Complete the form below, and our team will get back to you to discuss your objectives.
                             </p>
                         </div>
 
@@ -68,19 +68,19 @@ const Contact = () => {
                                     <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
                                         <CheckCircle className="w-8 h-8 text-green-600" />
                                     </div>
-                                    <h3 className="text-2xl font-bold text-gray-800 mb-2">Заявка отправлена!</h3>
-                                    <p className="text-gray-600 mb-8">Спасибо за обращение. Я свяжусь с вами в ближайшее время.</p>
+                                    <h3 className="text-2xl font-bold text-gray-800 mb-2">Message Sent!</h3>
+                                    <p className="text-gray-600 mb-8">Thank you for your inquiry. We will contact you shortly.</p>
                                     <button
                                         onClick={() => setStatus('idle')}
                                         className="text-primary font-medium hover:underline"
                                     >
-                                        Отправить еще одну заявку
+                                        Send another message
                                     </button>
                                 </div>
                             ) : (
                                 <form onSubmit={handleSubmit} className="space-y-6">
                                     <div>
-                                        <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">Имя</label>
+                                        <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">Name</label>
                                         <input
                                             type="text"
                                             id="name"
@@ -89,13 +89,13 @@ const Contact = () => {
                                             value={formData.name}
                                             onChange={handleChange}
                                             className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
-                                            placeholder="Ваше имя"
+                                            placeholder="Your Name"
                                             disabled={status === 'sending'}
                                         />
                                     </div>
 
                                     <div>
-                                        <label htmlFor="contact" className="block text-sm font-medium text-gray-700 mb-2">Email или Telegram</label>
+                                        <label htmlFor="contact" className="block text-sm font-medium text-gray-700 mb-2">Email or Phone</label>
                                         <input
                                             type="text"
                                             id="contact"
@@ -104,13 +104,13 @@ const Contact = () => {
                                             value={formData.contact}
                                             onChange={handleChange}
                                             className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
-                                            placeholder="Как с вами связаться"
+                                            placeholder="How can we reach you?"
                                             disabled={status === 'sending'}
                                         />
                                     </div>
 
                                     <div>
-                                        <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">Короткое описание задачи</label>
+                                        <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">Brief Description</label>
                                         <textarea
                                             id="message"
                                             name="message"
@@ -119,7 +119,7 @@ const Contact = () => {
                                             value={formData.message}
                                             onChange={handleChange}
                                             className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all resize-none"
-                                            placeholder="Опишите вашу задачу..."
+                                            placeholder="Describe your project..."
                                             disabled={status === 'sending'}
                                         />
                                     </div>
@@ -127,7 +127,7 @@ const Contact = () => {
                                     {status === 'error' && (
                                         <div className="flex items-center gap-2 text-red-600 bg-red-50 p-4 rounded-lg">
                                             <AlertCircle className="w-5 h-5 flex-shrink-0" />
-                                            <p className="text-sm">Произошла ошибка при отправке. Пожалуйста, проверьте подключение или напишите нам напрямую на почту.</p>
+                                            <p className="text-sm">An error occurred while sending. Please check your connection or email us directly.</p>
                                         </div>
                                     )}
 
@@ -139,18 +139,18 @@ const Contact = () => {
                                         {status === 'sending' ? (
                                             <>
                                                 <Loader2 className="w-5 h-5 animate-spin" />
-                                                Отправка...
+                                                Sending...
                                             </>
                                         ) : (
                                             <>
-                                                Отправить запрос
+                                                Submit Inquiry
                                                 <Send className="w-5 h-5" />
                                             </>
                                         )}
                                     </button>
 
                                     <p className="text-xs text-gray-500 text-center mt-4">
-                                        Нажимая на кнопку «Оставить заявку», вы даете согласие на обработку персональных данных и соглашаетесь c <Link to="/privacy" className="underline hover:text-primary transition-colors">политикой конфиденциальности</Link>
+                                        By clicking "Submit Inquiry", you consent to the processing of personal data and agree to the <Link to="/privacy" className="underline hover:text-primary transition-colors">Privacy Policy</Link>
                                     </p>
                                 </form>
                             )}
