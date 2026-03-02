@@ -19,18 +19,18 @@ const ProblemSolution = () => {
                     </div>
 
                     <div className="grid md:grid-cols-3 gap-8">
-                        <div className="bg-slate-50 p-8 border border-slate-200 shadow-sm rounded-none hover:border-red-500/30 transition-colors group">
-                            <Clock className="w-8 h-8 text-red-500 mb-6 group-hover:scale-110 transition-transform duration-300" />
+                        <div className="bg-slate-50 p-8 border border-slate-200 shadow-sm rounded-none hover:border-[#06b6d4]/30 transition-colors group">
+                            <Clock className="w-8 h-8 text-[#06b6d4] mb-6 group-hover:scale-110 transition-transform duration-300" />
                             <h4 className="text-xl font-bold text-slate-900 mb-3">Drowning in Docs</h4>
                             <p className="text-slate-600 text-sm leading-relaxed">Searching through hundreds of technical manuals, regulations, and equipment specifications.</p>
                         </div>
-                        <div className="bg-slate-50 p-8 border border-slate-200 shadow-sm rounded-none hover:border-red-500/30 transition-colors group">
-                            <AlertTriangle className="w-8 h-8 text-red-500 mb-6 group-hover:scale-110 transition-transform duration-300" />
+                        <div className="bg-slate-50 p-8 border border-slate-200 shadow-sm rounded-none hover:border-[#06b6d4]/30 transition-colors group">
+                            <AlertTriangle className="w-8 h-8 text-[#06b6d4] mb-6 group-hover:scale-110 transition-transform duration-300" />
                             <h4 className="text-xl font-bold text-slate-900 mb-3">Reactive Maintenance</h4>
                             <p className="text-slate-600 text-sm leading-relaxed">Discovering equipment issues only after failures occur due to slow data analysis.</p>
                         </div>
-                        <div className="bg-slate-50 p-8 border border-slate-200 shadow-sm rounded-none hover:border-red-500/30 transition-colors group">
-                            <XCircle className="w-8 h-8 text-red-500 mb-6 group-hover:scale-110 transition-transform duration-300" />
+                        <div className="bg-slate-50 p-8 border border-slate-200 shadow-sm rounded-none hover:border-[#06b6d4]/30 transition-colors group">
+                            <XCircle className="w-8 h-8 text-[#06b6d4] mb-6 group-hover:scale-110 transition-transform duration-300" />
                             <h4 className="text-xl font-bold text-slate-900 mb-3">Knowledge Silos</h4>
                             <p className="text-slate-600 text-sm leading-relaxed">Critical expertise locked in individual minds, not organizational systems.</p>
                         </div>

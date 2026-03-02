@@ -14,8 +14,8 @@ const Results = () => {
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {/* Operational Efficiency */}
-                    <div className="p-6 bg-surface/20 border border-white/5 hover:border-accent-cyan transition-colors">
-                        <Clock className="w-8 h-8 text-accent-cyan mb-4" />
+                    <div className="p-6 bg-surface/20 border border-white/5 hover:border-[#c39f64] transition-colors">
+                        <Clock className="w-8 h-8 text-[#c39f64] mb-4" />
                         <h4 className="text-white font-bold mb-4">Operatonal Efficiency</h4>
                         <div className="space-y-4">
                             <div>
@@ -30,8 +30,8 @@ const Results = () => {
                     </div>
 
                     {/* Knowledge Management */}
-                    <div className="p-6 bg-surface/20 border border-white/5 hover:border-accent-gold transition-colors">
-                        <TrendingUp className="w-8 h-8 text-accent-gold mb-4" />
+                    <div className="p-6 bg-surface/20 border border-white/5 hover:border-[#c39f64] transition-colors">
+                        <TrendingUp className="w-8 h-8 text-[#c39f64] mb-4" />
                         <h4 className="text-white font-bold mb-4">Knowledge</h4>
                         <div className="space-y-4">
                             <div>
@@ -46,8 +46,8 @@ const Results = () => {
                     </div>
 
                     {/* Safety & Compliance */}
-                    <div className="p-6 bg-surface/20 border border-white/5 hover:border-red-400 transition-colors">
-                        <Shield className="w-8 h-8 text-red-400 mb-4" />
+                    <div className="p-6 bg-surface/20 border border-white/5 hover:border-[#c39f64] transition-colors">
+                        <Shield className="w-8 h-8 text-[#c39f64] mb-4" />
                         <h4 className="text-white font-bold mb-4">Safety</h4>
                         <div className="space-y-4">
                             <div>
@@ -62,8 +62,8 @@ const Results = () => {
                     </div>
 
                     {/* Workforce */}
-                    <div className="p-6 bg-surface/20 border border-white/5 hover:border-white transition-colors">
-                        <Users className="w-8 h-8 text-white mb-4" />
+                    <div className="p-6 bg-surface/20 border border-white/5 hover:border-[#c39f64] transition-colors">
+                        <Users className="w-8 h-8 text-[#c39f64] mb-4" />
                         <h4 className="text-white font-bold mb-4">Workforce</h4>
                         <div className="space-y-4">
                             <div>

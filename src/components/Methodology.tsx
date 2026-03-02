@@ -12,27 +12,27 @@ const Methodology = () => {
 
                 <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-4 text-left border-b border-white/5 pb-16 mb-16">
                     <div className="p-4 border border-white/5 bg-primary/30">
-                        <div className="mb-4 text-accent-cyan"><Target className="w-6 h-6" /></div>
+                        <div className="mb-4 text-[#c39f64]"><Target className="w-6 h-6" /></div>
                         <h4 className="text-white font-bold text-sm mb-2">1. Your Reality</h4>
                         <p className="text-xs text-gray-400 leading-relaxed">No generic examples. We use your actual documents and data.</p>
                     </div>
                     <div className="p-4 border border-white/5 bg-primary/30">
-                        <div className="mb-4 text-accent-gold"><HammerIcon className="w-6 h-6" /></div>
+                        <div className="mb-4 text-[#c39f64]"><HammerIcon className="w-6 h-6" /></div>
                         <h4 className="text-white font-bold text-sm mb-2">2. Build, Don't Just Learn</h4>
                         <p className="text-xs text-gray-400 leading-relaxed">70% guided building. Create working tools during training.</p>
                     </div>
                     <div className="p-4 border border-white/5 bg-primary/30">
-                        <div className="mb-4 text-red-400"><ShieldCheck className="w-6 h-6" /></div>
+                        <div className="mb-4 text-[#c39f64]"><ShieldCheck className="w-6 h-6" /></div>
                         <h4 className="text-white font-bold text-sm mb-2">3. Safety First</h4>
                         <p className="text-xs text-gray-400 leading-relaxed">Strict data protocols and hallucination verification.</p>
                     </div>
                     <div className="p-4 border border-white/5 bg-primary/30">
-                        <div className="mb-4 text-white"><Layers className="w-6 h-6" /></div>
+                        <div className="mb-4 text-[#c39f64]"><Layers className="w-6 h-6" /></div>
                         <h4 className="text-white font-bold text-sm mb-2">4. Gradual Complexity</h4>
                         <p className="text-xs text-gray-400 leading-relaxed">From simple search to complex system integration.</p>
                     </div>
                     <div className="p-4 border border-white/5 bg-primary/30">
-                        <div className="mb-4 text-accent-cyan"><UserCheck className="w-6 h-6" /></div>
+                        <div className="mb-4 text-[#c39f64]"><UserCheck className="w-6 h-6" /></div>
                         <h4 className="text-white font-bold text-sm mb-2">5. Reinforcement</h4>
                         <p className="text-xs text-gray-400 leading-relaxed">30-day support to ensure skills become habits.</p>
                     </div>

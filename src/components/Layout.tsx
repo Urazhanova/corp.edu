@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import TelegramFloatButton from './TelegramFloatButton';
 
 interface LayoutProps {
     children: React.ReactNode;
@@ -86,6 +87,7 @@ const Layout = ({ children }: LayoutProps) => {
             <main className="flex-grow">
                 {children}
             </main>
+            <TelegramFloatButton />
         </div>
     );
 };

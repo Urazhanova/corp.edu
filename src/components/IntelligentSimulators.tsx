@@ -38,29 +38,29 @@ const IntelligentSimulators = () => {
 
                 {/* Simulator Types Grid */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div className="bg-surface/50 p-6 border border-white/5 hover:border-accent-cyan/30 transition-all group">
-                        <AlertTriangle className="w-8 h-8 text-red-400 mb-4 group-hover:scale-110 transition-transform" />
+                    <div className="bg-surface/50 p-6 border border-white/5 hover:border-[#c39f64]/30 transition-all group">
+                        <AlertTriangle className="w-8 h-8 text-[#c39f64] mb-4 group-hover:scale-110 transition-transform" />
                         <h4 className="text-lg font-bold text-white mb-2">Operational Crisis</h4>
                         <p className="text-xs text-gray-400 mb-4 leading-relaxed">Immersive environments replicating equipment failures and emergency scenarios.</p>
                         <span className="text-accent-cyan text-xs font-mono uppercase tracking-wider">Use Case: Emergency Response</span>
                     </div>
 
-                    <div className="bg-surface/50 p-6 border border-white/5 hover:border-accent-gold/30 transition-all group">
-                        <BookOpen className="w-8 h-8 text-accent-gold mb-4 group-hover:scale-110 transition-transform" />
+                    <div className="bg-surface/50 p-6 border border-white/5 hover:border-[#c39f64]/30 transition-all group">
+                        <BookOpen className="w-8 h-8 text-[#c39f64] mb-4 group-hover:scale-110 transition-transform" />
                         <h4 className="text-lg font-bold text-white mb-2">Technical Skills</h4>
                         <p className="text-xs text-gray-400 mb-4 leading-relaxed">Interactive learning identifying gaps and adapting to individual skill levels.</p>
                         <span className="text-accent-gold text-xs font-mono uppercase tracking-wider">Use Case: Certification</span>
                     </div>
 
-                    <div className="bg-surface/50 p-6 border border-white/5 hover:border-accent-cyan/30 transition-all group">
-                        <BrainCircuit className="w-8 h-8 text-white mb-4 group-hover:scale-110 transition-transform" />
+                    <div className="bg-surface/50 p-6 border border-white/5 hover:border-[#c39f64]/30 transition-all group">
+                        <BrainCircuit className="w-8 h-8 text-[#c39f64] mb-4 group-hover:scale-110 transition-transform" />
                         <h4 className="text-lg font-bold text-white mb-2">Decision Engines</h4>
                         <p className="text-xs text-gray-400 mb-4 leading-relaxed">AI scenarios training managers to make better choices under pressure.</p>
                         <span className="text-accent-cyan text-xs font-mono uppercase tracking-wider">Use Case: Resource Planning</span>
                     </div>
 
-                    <div className="bg-surface/50 p-6 border border-white/5 hover:border-accent-gold/30 transition-all group">
-                        <Network className="w-8 h-8 text-gray-300 mb-4 group-hover:scale-110 transition-transform" />
+                    <div className="bg-surface/50 p-6 border border-white/5 hover:border-[#c39f64]/30 transition-all group">
+                        <Network className="w-8 h-8 text-[#c39f64] mb-4 group-hover:scale-110 transition-transform" />
                         <h4 className="text-lg font-bold text-white mb-2">Knowledge Preservation</h4>
                         <p className="text-xs text-gray-400 mb-4 leading-relaxed">Capturing expertise of senior personnel before they retire.</p>
                         <span className="text-accent-gold text-xs font-mono uppercase tracking-wider">Use Case: Expert Retiring</span>
@@ -70,15 +70,15 @@ const IntelligentSimulators = () => {
                 <div className="mt-16 bg-primary border border-white/10 p-8 text-center">
                     <span className="text-accent-cyan text-sm font-bold uppercase tracking-widest block mb-2">Custom Development Process</span>
                     <div className="flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm gap-4">
-                        <span>1. Discovery (Wk 1-2)</span>
+                        <span>1. Discovery (Week 1-2)</span>
                         <span className="hidden md:block w-8 h-px bg-white/20"></span>
-                        <span>2. Design (Wk 3-4)</span>
+                        <span>2. Design (Week 3-4)</span>
                         <span className="hidden md:block w-8 h-px bg-white/20"></span>
-                        <span>3. Development (Wk 5-10)</span>
+                        <span>3. Development (Week 5-10)</span>
                         <span className="hidden md:block w-8 h-px bg-white/20"></span>
-                        <span>4. Testing (Wk 11-12)</span>
+                        <span>4. Testing (Week 11-12)</span>
                         <span className="hidden md:block w-8 h-px bg-white/20"></span>
-                        <span className="text-white font-bold">5. Deployment (Wk 13+)</span>
+                        <span className="text-white font-bold">5. Deployment (Week 13+)</span>
                     </div>
                 </div>
 

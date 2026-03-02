@@ -68,10 +68,6 @@ const PartnershipInquiry = () => {
                                     <input type="text" name="user_company" required onInvalid={(e) => (e.target as HTMLInputElement).setCustomValidity('Please fill out this field.')} onInput={(e) => (e.target as HTMLInputElement).setCustomValidity('')} className="w-full bg-primary border-b border-white/20 px-0 py-3 text-white focus:outline-none focus:border-accent-cyan transition-colors hover:border-white/40 placeholder-primary" placeholder="Organization Name" />
                                 </div>
                                 <div className="space-y-2">
-                                    <label className="text-xs font-mono text-accent-cyan uppercase tracking-wider">Title</label>
-                                    <input type="text" name="user_title" required onInvalid={(e) => (e.target as HTMLInputElement).setCustomValidity('Please fill out this field.')} onInput={(e) => (e.target as HTMLInputElement).setCustomValidity('')} className="w-full bg-primary border-b border-white/20 px-0 py-3 text-white focus:outline-none focus:border-accent-cyan transition-colors hover:border-white/40 placeholder-primary" placeholder="Job Title" />
-                                </div>
-                                <div className="space-y-2">
                                     <label className="text-xs font-mono text-accent-cyan uppercase tracking-wider">Email</label>
                                     <input type="email" name="user_email" required onInvalid={(e) => { const t = e.target as HTMLInputElement; t.setCustomValidity(t.validity.valueMissing ? 'Please fill out this field.' : 'Please enter a valid email address.'); }} onInput={(e) => (e.target as HTMLInputElement).setCustomValidity('')} className="w-full bg-primary border-b border-white/20 px-0 py-3 text-white focus:outline-none focus:border-accent-cyan transition-colors hover:border-white/40 placeholder-primary" placeholder="Work Email" />
                                 </div>
@@ -84,10 +80,6 @@ const PartnershipInquiry = () => {
                                         <option value="Logistics">Logistics</option>
                                         <option value="Other">Other</option>
                                     </select>
-                                </div>
-                                <div className="space-y-2">
-                                    <label className="text-xs font-mono text-accent-cyan uppercase tracking-wider">Estimated Timeline</label>
-                                    <input type="text" name="timeline" className="w-full bg-primary border-b border-white/20 px-0 py-3 text-white focus:outline-none focus:border-accent-cyan transition-colors hover:border-white/40 placeholder-primary" placeholder="e.g. Q3 2024" />
                                 </div>
                             </div>
 
