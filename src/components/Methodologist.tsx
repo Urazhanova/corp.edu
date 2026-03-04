@@ -100,7 +100,7 @@ const Methodologist = () => {
                                             <li className="flex gap-4 items-start">
                                                 <span className="w-2 h-2 bg-primary rounded-full mt-2.5 flex-shrink-0" />
                                                 <p className="text-gray-700 leading-relaxed">
-                                                    Более 5 лет внедряет ИИ и работу с данными в образовательный дизайн и креативные академии.
+                                                    Более 3 лет внедряет ИИ и работу с данными в образовательный дизайн и креативные академии.
                                                 </p>
                                             </li>
                                         </ul>
