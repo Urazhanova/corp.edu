@@ -19,7 +19,7 @@ const Footer = () => {
                     </div>
 
                     <div className="text-blue-200 text-sm">
-                        © 2025 Corp.Edu
+                        © 2026 Corp.Edu
                     </div>
                 </div>
             </div>
